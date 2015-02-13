@@ -1,5 +1,8 @@
 <?php namespace App\Http\Controllers;
 
+use Illuminate\Hashing\HashServiceProvider;
+use Illuminate\Support\Facades\Hash;
+
 class WelcomeController extends Controller {
 
 	/*
@@ -30,6 +33,7 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
+		//return \Hash::make('katie');
 		return view('welcome');
 	}
 
