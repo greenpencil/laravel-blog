@@ -6,6 +6,7 @@
 
 
 @section('content')
+    <div class="tile-group no-margin no-padding1 clearfix" style="width: 100%;">
     <div class="tile quadro quadro-vertical">
         <div class="tile-content image">
             <img src="http://lorempixel.com/output/abstract-q-c-510-510-7.jpg">
@@ -93,6 +94,7 @@
             <div class="badge bg-orange">9</div>
         </div>
     </div>
+        </div>
 
     <div class="tile-group no-margin no-padding1 clearfix" style="width: 100%;">
         <a href="#"><span class="tile-group-title fg-orange">NEWS <span class="icon-arrow-right-5"></span></span></a>
