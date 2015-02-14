@@ -32,3 +32,9 @@
         margin: 0 auto;
     }
 }
+
+.metro footer {
+    height: 100px;
+    line-height: 100px;
+    background-color: #1c5ec7;
+}

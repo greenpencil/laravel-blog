@@ -15,7 +15,9 @@
         @yield('title')
     </h1>
     @yield('content')
+
 </div>
+{{--@include('templates.footer')--}}
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 
 <script type='text/javascript' src="http://metroui.org.ua/js/jquery/jquery.widget.min.js"></script>
