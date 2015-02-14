@@ -1,28 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Reddit</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/metro-bootstrap.min.css">
+    <link rel="stylesheet" href="css/iconFont.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    {{ HTML::style('css/bootstrap.min.css') }}
-    {{ HTML::style('css/reddit.css') }}
+    <link rel="stylesheet" type="text/css" href="css/blog.css">
 </head>
 
-<body>
+<body class="metro">
 @include('templates.navbar')
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-9">@yield('content')</div>
-        <div class="col-md-3">@yield('sidebar')</div>
-    </div>
+    <h1>
+        @yield('title')
+    </h1>
+    @yield('content')
 </div>
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+<script type='text/javascript' src="http://metroui.org.ua/js/jquery/jquery.widget.min.js"></script>
+
+<script type='text/javascript' src="http://metroui.org.ua/js/metro.min.js"></script>
 
 </body>
 </html>

@@ -33,8 +33,7 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		//return \Hash::make('katie');
-		return view('welcome');
+		return view('pages/index');
 	}
 
 }
