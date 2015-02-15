@@ -6,7 +6,7 @@
 
 
 @section('content')
-    <div class="tile-group no-margin no-padding1 clearfix" style="width: 100%;">
+    <div class="tile-group no-margin no-padding clearfix" style="width: 100%;">
     <div class="tile quadro quadro-vertical">
         <div class="tile-content image">
             <img src="http://lorempixel.com/output/abstract-q-c-510-510-7.jpg">
@@ -95,26 +95,7 @@
         </div>
     </div>
         </div>
+    <div class="clearfix"></div>
 
-    <div class="tile-group no-margin no-padding1 clearfix" style="width: 100%;">
-        <a href="#"><span class="tile-group-title fg-orange">NEWS <span class="icon-arrow-right-5"></span></span></a>
-        <div class="tile quadro double-vertical"></div>
-        <div class="tile double"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile double"></div>
-    </div>
 
-    <div class="tile-group no-margin no-padding1 clearfix" style="width: 100%;">
-        <a href="#"><span class="tile-group-title fg-cobalt">SPORT <span class="icon-arrow-right-5"></span></span></a>
-        <div class="tile quadro double-vertical ol-transparent"></div>
-        <div class="tile double ol-transparent"></div>
-        <div class="tile ol-transparent"></div>
-        <div class="tile ol-transparent"></div>
-        <div class="tile ol-transparent"></div>
-        <div class="tile ol-transparent"></div>
-        <div class="tile double ol-transparent"></div>
-    </div>
 @stop
