@@ -17,9 +17,12 @@ class CreateFeaturedTable extends Migration {
 			$table->engine = 'InnoDB';
 
 			$table->increments('id', true);
-			$table->string('title');
+			$table->integer('location');
+			$table->unsignedInteger('post_id');
+			$table->foreign('post_id')->references('id')->on('posts');
 			$table->string('image');
-			$table->string('short_desc');
+			$table->boolean('visible');
+			$table->timestamps();
 		});
 	}
 
