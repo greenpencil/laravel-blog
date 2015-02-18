@@ -1,7 +1,12 @@
 @extends('templates.default')
 
+@section('header')
+    <title>{{ $settings[0]->value }} - Home</title>
+@stop
+
+
 @section('title')
-    Katie Paxton-Fear<small class="on-right">Opera, PHP, Windows Phone</small>
+    {{ $settings[0]->value }}<small class="on-right">{{ $settings[1]->value }}</small>
 @stop
 
 
