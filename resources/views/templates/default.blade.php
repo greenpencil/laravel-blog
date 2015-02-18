@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/iconFont.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/blog.css">
+    @yield('header')
 </head>
 
 <body class="metro">
