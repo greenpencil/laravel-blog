@@ -26,6 +26,6 @@ class Post extends Model {
 
     public function featured()
     {
-        return $this->belongsTo('Featured');
+        return $this->hasMany('App\Models\Featured');
     }
 }

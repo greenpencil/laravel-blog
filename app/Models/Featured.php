@@ -11,6 +11,6 @@ class Featured extends Model {
 
     public function post()
     {
-        return $this->hasOne('Post');
+        return $this->belongsTo('App\Models\Post');
     }
 }

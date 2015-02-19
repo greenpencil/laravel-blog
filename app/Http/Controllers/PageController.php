@@ -13,8 +13,11 @@ class PageController extends Controller {
 	public function index()
 	{
 		$featured = Featured::where('visible', '=', 1)->get();
-		$settings = Setting::all();
-
+		$settingsData = Setting::all();
+		foreach($settingsData as $setting)
+		{
+			$settings[$setting->key] = $setting->value;
+		}
 		return view('pages/index', ['featured' => $featured], ['settings' => $settings]);
 	}
 
