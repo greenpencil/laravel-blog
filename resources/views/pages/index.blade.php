@@ -1,12 +1,12 @@
 @extends('templates.default')
 
 @section('header')
-    <title>{{ $settings[0]->value }} - Home</title>
+    <title>{{ $settings['blog_name'] }} - Home</title>
 @stop
 
 
 @section('title')
-    {{ $settings[0]->value }}<small class="on-right">{{ $settings[1]->value }}</small>
+    {{ $settings['blog_name'] }}<small class="on-right">{{ $settings['tagline'] }}</small>
 @stop
 
 
