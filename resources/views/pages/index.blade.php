@@ -11,21 +11,23 @@
 
 
 @section('content')
-    <div class="tile-group no-margin no-padding clearfix" style="width: 100%;">
-    <div class="tile quadro quadro-vertical">
-        <div class="tile-content image">
-            <img src="http://lorempixel.com/output/abstract-q-c-510-510-7.jpg">
-        </div>
+    @foreach($featured as $post)
+        <div class="tile-group no-margin no-padding clearfix" style="width: 100%;">
+        <div class="tile quadro quadro-vertical">
+            <div class="tile-content image">
+                <img src="/images/featured/{{ $post->image }}" style="height: 512px;">
+            </div>
 
-        <div class="brand bg-dark opacity">
-        <span class="text">
-            This is a sample post, aren't I an amazing designer.
-        </span>
+            <div class="brand bg-dark opacity">
+            <span class="text">
+                {{ $post->post->title }}
+            </span>
+            </div>
+            <div class="brand">
+                <div class="badge bg-red">12</div>
+            </div>
         </div>
-        <div class="brand">
-            <div class="badge bg-red">12</div>
-        </div>
-    </div>
+    @endforeach
 
     <div class="tile triple double-vertical">
         <div class="tile-content image">
